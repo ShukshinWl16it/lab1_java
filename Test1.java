@@ -128,8 +128,7 @@ public class Test1 {
             count++;
             if(guess==randNum){
                 System.out.println("Вы угадали!");
-            }
-            else{
+            } else{
                 System.out.println("Вы не угадали, введите число от 0 до 9: ");
             }
         }while(guess!=randNum);
