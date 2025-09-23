@@ -2,9 +2,9 @@ import java.util.Scanner;
 import java.util.Random;
 public class Test1 {
     public int sumLastNums(int x) {
-        int x1=x%10;
+        int x1=x%10;//получение последней цифры
         x/=10;
-        int x2=x%10;
+        int x2=x%10;//получение предпоследней цифры
         return x1+x2;
     }
     public boolean isPositive(int x) {
@@ -199,11 +199,11 @@ public class Test1 {
             }
         }
         int[] result=new int[positive];//новый массив для положительных чисел
-        int number=0;
+        int index=0;
         for(int num:arr){
             if(num>=0){
-                result[number]=num;
-                number++;
+                result[index]=num;
+                index++;
             }
         }
         return result;
